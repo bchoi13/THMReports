@@ -23,10 +23,11 @@
 - Zimmerman's Registry Explorer - [Similar to the aforementioned Registry Viewer (AccessData), but able to load multiple hives at once. Can also import data from transaction logs. ]
 - RegRipper - [Input registry hive, output data report.]
 
-Note:
-
-| Hive | Group of keys, subkeys, and values containing set of supporting values loaded into memory when OS starts up; inside the registry. | Ex: HKEY_LOCAL_MACHINE\Security |
-| Transaction Logs | Journal of changelog of the registry. | Ex: C:\Windows\System32\Config
+###Note:
+| Item     | Definition    | Example |
+|------------------------------------|
+| Hive | Group of keys, subkeys, and values containing set of supporting values loaded into memory when OS starts up; inside the registry. | HKEY_LOCAL_MACHINE\Security |
+| Transaction Logs | Journal of changelog of the registry. | C:\Windows\System32\Config
 
 ---
 
