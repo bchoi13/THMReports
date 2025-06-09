@@ -15,9 +15,9 @@
 ## 🎯 Target Information
 | Detail        | Value              |
 |---------------|--------------------|
-| IP Address     | [Target IP]        |
+| IP Address     | [N/A / No CTF]        |
 | Operating System |  Windows   |
-| Services Discovered | [e.g. HTTP, SSH, SMB] |
+| Applications Discovered | [EZViewer, Autopsy,] |
 
 ---
 
