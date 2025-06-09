@@ -25,9 +25,8 @@
 
 Note:
 
-Hive = 
-
-Transaction Logs = 
+| Hive | Group of keys, subkeys, and values containing set of supporting values loaded into memory when OS starts up; inside the registry. | Ex: HKEY_LOCAL_MACHINE\Security |
+| Transaction Logs | Journal of changelog of the registry. | Ex: C:\Windows\System32\Config
 
 ---
 
