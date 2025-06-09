@@ -1,9 +1,13 @@
 # TryHackMe - Windows Forensics 1 Walkthrough [In Progress]
 
 ## 📘 Overview
+
 **Room Name:** Windows Forensics 1  
+
 **Difficulty:** Medium
+
 **Objective:** This room showcases forensic analysis in Windows OS via Windows Registry.
+
 **Date Completed:** [06/01/2025]
 
 ---
