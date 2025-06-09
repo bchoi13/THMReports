@@ -4,7 +4,7 @@
 **Room Name:** Windows Forensics 1  
 **Difficulty:** Medium
 **Objective:** This room showcases forensic analysis in Windows OS via Windows Registry.
-**Date Completed:** [MM/DD/YYYY]
+**Date Completed:** [06/01/2025]
 
 ---
 
@@ -12,22 +12,22 @@
 | Detail        | Value              |
 |---------------|--------------------|
 | IP Address     | [Target IP]        |
-| Operating System | [Windows/Linux]   |
+| Operating System |  Windows   |
 | Services Discovered | [e.g. HTTP, SSH, SMB] |
 
 ---
 
 ## 🛠️ Tools Used
 - Registry Editor - regedit.exe. Basic executable that opens up window of system's registry. 
-- Registry Viewer - [Purpose]
-- Zimmerman's Registry Explorer - [Purpose]
-- RegRipper - [Purpose]
+- Registry Viewer - [User interface for viewing registry, though only allows access to one registry hive at a time.]
+- Zimmerman's Registry Explorer - [Similar to the aforementioned Registry Viewer (AccessData), but able to load multiple hives at once. Can also import data from transaction logs. ]
+- RegRipper - [Input registry hive, output data report.]
 
+Note:
+
+Hive = 
+Transaction Logs = 
 ---
 
 ## 🔍 Enumeration
-
-### 🔎 Nmap Scan
-```bash
-nmap -sC -sV -oN nmap_initial [IP]
 
