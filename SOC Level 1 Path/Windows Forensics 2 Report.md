@@ -1,10 +1,14 @@
 # TryHackMe - Windows Forensics 2 Walkthrough [In Progress]
 
 ## 📘 Overview
+
 **Room Name:** Windows Forensics 2
+
 **Difficulty:** Medium  
+
 **Objective:** Learn about common Windows file systems and forensic artifacts in the file systems. Identify locations and artifacts 
 to prove evidence of execution, file/folder usage or knowledge, and external device usage.  
+
 **Date Completed:** [06/06/2025]
 
 ---
@@ -32,14 +36,23 @@ to prove evidence of execution, file/folder usage or knowledge, and external dev
 Findings:
 ```
 
-### PECmd.exe
+### 🔎 PECmd.exe
+```bash
 
-### LECmd.exe
+Findings:
+```
+
+### 🔎 LECmd.exe
+```bash
+
+Findings:
+```
 
 
 Notes...
 
 📂 Other Enumeration
+
 Used EZViewer to comprehensively view csv data files created from executing the above processes.
 
 Found important data objects listed in excel format. 
