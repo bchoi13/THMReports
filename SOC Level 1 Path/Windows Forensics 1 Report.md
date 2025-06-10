@@ -1,4 +1,6 @@
-# TryHackMe - Windows Forensics 1 Walkthrough [In Progress]
+# TryHackMe - Windows Forensics 1
+
+https://tryhackme.com/room/windowsforensics1
 
 ## 📘 Overview
 
@@ -34,6 +36,4 @@
 | Transaction Logs | Journal of changelog of the registry. | C:\Windows\System32\Config
 
 ---
-
-## 🔍 Enumeration
 
