@@ -1,4 +1,4 @@
-# TryHackMe - Windows Forensics 2 Walkthrough [In Progress]
+# TryHackMe - Windows Forensics 2 Walkthrough
 
 ## 📘 Overview
 
@@ -34,18 +34,51 @@ to prove evidence of execution, file/folder usage or knowledge, and external dev
 ```bash
 
 Findings:
+MFTECmd.exe -f C:\Users\THM-4n6\Desktop\triage\C\$MFT -csv C:\Users\THM-4n6\Desktop
+
+Parse data from different NTFS files. Outputs as a csv. Here we are able to view data points such as filename, created date, modified dates, access dates, and much more, all displayed in excel format. 
 ```
 
 ### 🔎 PECmd.exe
 ```bash
 
 Findings:
+
+PECmd.exe -d C:\Users\THM-4n6\Desktop\triage\C\Windows\prefetch -csv C:\Users\THM-4n6\Desktop
+
+Prefetch parser used to output parsed file as 2 different csv's. Prefetch files contain information used to load a program quickly if used frequently. Inside the csv, we are able to locate data such as last time of execution and times executed for different files in our system.
+```
+
+### 🔎 WxTCmd.exe
+```bash
+
+Findings:
+
+WxTCmd.exe -f C:\Users\THM-4n6\Desktop\triage\C\Users\THM-4n6\AppData\Local\ConnectedDevicesPlatform\L.THM-4n6\ActivitiesCache.db — csv C:\Users\THM-4n6\Desktop
+
+Windows 10 timeline parser. Source of information for last executed processes.
+```
+
+### 🔎 JLECmd.exe
+
+```bash
+
+Findings:
+
+JLECmd.exe -d C:\Users\THM-4n6\Desktop\triage\C\Users\THM-4n6\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations — csv C:\Users\THM-4n6\Desktop
+
+Jumplists parser. Jumplists were introduced by Windows 10 as a way for users to directly access recently used files from their taskbar. 
+
 ```
 
 ### 🔎 LECmd.exe
 ```bash
 
 Findings:
+
+LECmd.exe -d C:\Users\THM-4n6\Desktop\triage\C\Users\THM-4n6\AppData\Roaming\Microsoft\Windows\Recent\ — csv C:\Users\THM-4n6\Desktop
+
+Lnk Explorer. Used to parse shortcut files. Command outputs csv containing data viewed in an excel spreadsheet format. Can view data such as last open time, creation time, modified time. 
 ```
 
 
@@ -96,7 +129,6 @@ can be vital information for maintaining integrity.
 
 New tools or techniques learned: Eric ZImmerman's Tools. 
 
-Any troubleshooting insights:
 
 
 
